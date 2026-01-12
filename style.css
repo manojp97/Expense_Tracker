@@ -220,3 +220,12 @@ body.dark select {
     justify-content: center;
     margin-bottom: 15px;
 }
+
+#incomeInput{
+    margin: 10px 0; 
+}
+
+#addIncome {
+    margin-top: 8px;
+}
+
