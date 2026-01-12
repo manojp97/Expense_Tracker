@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="theme-btn">
+        <button id="themeToggle">Dark Mode</button>
+      </div>
+
+      <h1>Expense Tracker</h1>
+      <div class="section">
+        <input
+          type="number"
+          id="incomeInput"
+          placeholder="Enter Monthly Income"
+        />
+        <button id="addIncome">Add Income</button>
+      </div>
+
+      <div class="section">
+        <form id="expense-form">
+          <input type="text" id="title" placeholder="Expense Title" required />
+          <input type="number" id="amount" placeholder="Amount" required />
+          <select id="category" required>
+            <option value="">Select Category</option>
+            <option value="Food">Food</option>
+            <option value="Travel">Travel</option>
+            <option value="Rent">Rent</option>
+            <option value="Other">Other</option>
+          </select>
+
+          <button type="submit">Add Expense</button>
+        </form>
+      </div>
+      <div class="section">
+        <h3>Monthly Summary</h3>
+        <p>Income: ₹ <span id="incomeDisplay">0</span></p>
+        <p>Expense: ₹ <span id="expenseDisplay">0</span></p>
+        <p>
+          <b>Balance: ₹ <span id="balanceDisplay">0</span></b>
+        </p>
+      </div>
+
+      <div class="section filter-box">
+        <select id="filter">
+          <option value="All">All</option>
+          <option value="Food">Food</option>
+          <option value="Travel">Travel</option>
+          <option value="Rent">Rent</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+
+      <div class="section">
+        <ul id="expense-list"></ul>
+      </div>
+
+      <div class="section total">
+        Total Expense: ₹ <span id="total">0</span>
+      </div>
+
+      <script src="script.js"></script>
+    </div>
+  </body>
+</html>
